@@ -4,23 +4,23 @@ from functools import partial
 
 # Dictionary of track names and their corresponding color indices
 track_colors = {
-    "kick": 14, # red
-    "drums": 15, # orange
-    "hats": 15, # orange
-    "bass": 22, # blue
-    "lead": 5, # green
-    "synth": 19, # grass green
-    "pluck": 18, # lighter green
-    "vocals": 17, # yellow
-    "pads": 12, # pink
-    "ambience": 12, # pink
-    "fx": 13 # white
+    "ki": 14, # kicks - red
+    "dr": 15, # drums - orange
+    "ha": 15, # hats - orange
+    "ba": 22, # bass - blue
+    "le": 5, # leads - green
+    "sy": 19, # synths - grass green
+    "pl": 18, # plucks - lighter green
+    "vo": 17, # vocals - yellow
+    "pa": 12, # pads - pink
+    "am": 12, # ambience - pink
+    "fx": 13 # fx - white
 }
 
 def assign_track_color(track):
     """Assigns a color to a track based on its name"""
     track_name = track.name
-    temp_name = track_name.lower()
+    temp_name = track_name.lower()[0:2]
     if temp_name in track_colors:
         color_index = track_colors[temp_name]
         track.color_index = color_index
