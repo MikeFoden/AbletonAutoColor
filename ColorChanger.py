@@ -4,17 +4,17 @@ from functools import partial
 
 # Dictionary of track names and their corresponding color indices
 track_colors = {
-    "drums": 69,
-    "bass": 14,
-    "guitar": 63,
-    "vocals": 13,
-    "synth": 19,
-    "hats": 15,
-    "quarternote": 7,
-    "sixteenthnote": 17,
-    "openhat": 21,
-    "kick": 29,
-    "snare": 64
+    "kick": 14, # red
+    "drums": 15, # orange
+    "hats": 15, # orange
+    "bass": 22, # blue
+    "lead": 5, # green
+    "synth": 19, # grass green
+    "pluck": 18, # lighter green
+    "vocals": 17, # yellow
+    "pads": 12, # pink
+    "ambience": 12, # pink
+    "fx": 13 # white
 }
 
 def assign_track_color(track):
